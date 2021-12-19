@@ -9,6 +9,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "express": "^4.17.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbahl1670/ch11-noteTaker-mjb.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/mbahl1670/ch11-noteTaker-mjb/issues"
+  },
+  "homepage": "https://github.com/mbahl1670/ch11-noteTaker-mjb#readme"
 }
