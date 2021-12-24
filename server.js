@@ -2,6 +2,8 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const db = require("./db/db.json");
+const { createNewNote, deleteNote } = require("./lib/db");
+const { v4: uuidv4 } = require('uuid');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -16,7 +18,13 @@ app.get("/api/notes", (req, res) => {
 });
 
 app.post("/api/notes", (req, res) => {
-    
+    const newNote = createNewNote(req.body, db);
+    res.json(newNote);
+});
+
+app.delete("/api/notes/:id", (req, res) => {
+    deleteNote(req.params.id, db);
+    res.json(db);
 });
 
 app.get("/", (req, res) => {

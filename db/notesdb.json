@@ -1,0 +1,27 @@
+[
+    {
+      "title": "\"/\" Route",
+      "text": "GET /notes should return the notes.html file.\n",
+      "id": "b5f4b507-bc9c-4779-8d62-a08eccae528e"
+    },
+    {
+      "title": "\"*\" Route",
+      "text": "GET * should return the index.html file.",
+      "id": "bc9170c9-263e-4077-9ec3-bb20f5cff41e"
+    },
+    {
+      "title": "\"/api/notes\"",
+      "text": "GET /api/notes should read the db.json file and return all saved notes as JSON.",
+      "id": "7dae9134-e0d9-41c2-b05d-3b3e64ec95ad"
+    },
+    {
+      "title": "POST \"/api/notes\"",
+      "text": "POST /api/notes should receive a new note to save on the request body, add it to the db.json file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).",
+      "id": "134deecd-66dd-4c2c-b7fa-cc50009f7064"
+    },
+    {
+      "title": "Delete",
+      "text": "DELETE /api/notes/:id should receive a query parameter containing the id of a note to delete. In order to delete a note, you'll need to read all notes from the db.json file, remove the note with the given id property, and then rewrite the notes to the db.json file.",
+      "id": "34570b83-bc6b-4585-84fb-290b49747b77"
+    }
+  ]
